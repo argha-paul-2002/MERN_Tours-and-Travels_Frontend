@@ -9,6 +9,7 @@ import Subtitle from '../shared/Subtitle';
 
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
+import FeaturedTourList from '../components/Featured-tours/FeaturedTourList';
 
 const Home = () => {
   return (
@@ -47,6 +48,8 @@ const Home = () => {
       </Container>
     </section>
     {/* ============== Hero Section End ================ */}
+
+    {/* ============== Services Section Start ============= */}
     <section>
       <Container>
         <Row>
@@ -58,6 +61,25 @@ const Home = () => {
         </Row>
       </Container>
     </section>
+
+    {/* ============== Services Section End ============= */}
+
+    {/* ============== Featured tour Section Start ============= */}
+
+    <section>
+      <Container>
+        <Row>
+          <Col lg='12' className='mb-5'>
+            <Subtitle subtitle={'Explore'} />
+            <h2 className="featured__tour-title">Our featured tours</h2>
+          </Col>
+          <FeaturedTourList />
+        </Row>
+      </Container>
+    </section>
+
+    {/* ============== Featured tour Section End ============= */}
+
     </>
   )
 }
