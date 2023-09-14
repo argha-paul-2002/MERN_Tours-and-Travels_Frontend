@@ -157,8 +157,10 @@ const Home = () => {
 
     {/* ============== Testimonial Section End ============= */}
 
-    <Newsletter />
 
+    {/* ============== Newsletter Section============= */}
+
+    <Newsletter />
     </>
   )
 }
